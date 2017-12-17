@@ -1,4 +1,4 @@
-FROM Python
+FROM python
 FROM mongodb
 
 MAINTAINER Alex Karelin <alex@karel.in>
