@@ -3,6 +3,8 @@ FROM mongo
 
 MAINTAINER Alex Karelin <alex@karel.in>
 
+EXPOSE 3000
+
 ARG dir=/var/lib/polyglot
 ARG polyglot2=polyglot-v2-linux-x64
 
