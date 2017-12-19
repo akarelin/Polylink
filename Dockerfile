@@ -1,4 +1,6 @@
-FROM python
+FROM debian:stretch
+FROM python:slim-stretch
+FROM python:2-slim-stretch
 FROM mongo
 
 MAINTAINER Alex Karelin <alex@karel.in>
