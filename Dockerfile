@@ -10,6 +10,7 @@ EXPOSE 3000
 ARG dir=/var/lib/polyglot
 ARG polyglot2=polyglot-v2-linux-x64
 
+RUN mkdir -p ${dir}
 WORKDIR ${dir}
 
 # ADD . https://github.com/Einstein42/udi-polyglotv2/raw/master/binaries/${polyglot2}.tar.gz
