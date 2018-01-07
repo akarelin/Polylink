@@ -14,7 +14,7 @@ ENV NODE_ENV=development
 ENV USEDOCKER=true
 
 RUN apt-get update
-RUM apt-get dist-upgrade
+RUN apt-get dist-upgrade
 RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip
 
 RUN mkdir -p ${HOME}
