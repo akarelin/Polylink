@@ -13,9 +13,8 @@ ENV PYTHON3=/usr/bin/python3
 ENV NODE_ENV=development
 ENV USEDOCKER=true
 
-RUN apt-get update
-RUN apt-get dist-upgrade
-RUN apt-get -qqy install git python3-pip python3-dev python2.7-dev python-pip
+RUN apt-get --yes update && apt-get --yes dist-upgrade
+RUN apt-get --yes install git python3-pip python3-dev python2.7-dev python-pip
 
 RUN mkdir -p ${HOME}
 WORKDIR ${HOME}
