@@ -14,7 +14,7 @@ ENV NODE_ENV=development
 ENV USEDOCKER=true
 
 RUN apt-get --yes update
-RUN apt-get --yes install apt-utils
+RUN apt-get --yes install apt-utils wget
 RUN apt-get --yes install git python3-pip python3-dev python2.7-dev python-pip
 
 RUN mkdir -p ${HOME}
